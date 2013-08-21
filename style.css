@@ -1,15 +1,51 @@
 /*
-Theme Name: DW Focus (Powerbase)
+Theme Name: DW Focus (dirtmaster)
 Theme URI: http://www.designwall.com/wordpress-theme/dw-focus
-Author: DesignWall & Tom Nardi
+Author: dirtmaster
 Author URI: http://www.designwall.com
-Description: Fork of Design Wall's "DW Focus" Wordpress theme for "The Powerbase".
+Description: Fork of Design Wall's "DW Focus" Wordpress theme by the dirtmaster.
 Version: 1.4
 License: GNU General Public License v2
 License URI: COPYING
 */
 
-/* Modified CSS here for easier maintenance */
+/* Apply to all resolutions */
+
+/* Color scheme changes */
+body, input.field, .navbar .nav .menu-item-object-category .sub-mega-wrap,.archive .content-inner.layout-grid .type-post:first-child {background-color: black; color:#BEBEBE;}
+
+.single .entry-title, .page .entry-title, a, .archive .content-inner .entry-meta a {color: white;}
+
+.navbar .nav .menu-item-object-category .sub-mega-wrap .current_page_item>a, .navbar .nav .menu-item-object-category .sub-mega-wrap .current-menu-item>a, .navbar .nav .menu-item-object-category .sub-mega-wrap .current-post-ancestor>a, .navbar .nav .menu-item-object-category .sub-mega-wrap .current-menu-parent>a, .navbar .nav .menu-item-object-category .sub-mega-wrap .current-menu-ancestor>a {color: #EE3224;}
+
+.archive .content-inner.layout-grid {background: none;}
+
+.content-bar {background-color: #1C1A1A;}
+
+p {background-color: black;}
+
+.searchForm .submit {opacity:1;}
+
+.navbar {border: none;}
+
+.navbar .navbar-inner {border-width: 2px 0px 1px 0px; border-color: #D4D4D4;}
+
+.navbar .nav li a, .navbar .nav .menu-parent-item>a:after, #secondary .widget .widget-title {color:#666;}
+
+h1, h2, h3, h4, h5, h6 {color: #6A6E7F;}
+
+/* Remove glitchy category border */
+.single .site-content>.post .entry-meta {border-bottom: 0px;}
+
+/* Author avatar */
+.author-name {position:relative;} 
+
+/* Page navigation */
+.page-links {font-size: 22px;}
+
+.desktop .wrap-navigation {width: 100%;}
+
+.single .site-content>.post .post-categories li {background: #FF0000;} 
 
 /* Expand layout on displays 1200 wide or better*/
 @media (min-width: 1200px)
@@ -62,20 +98,4 @@ background-image: none;
 /* Slide over search bar */
 #under-navigation .searchForm {margin: 0 0 0 -71px;}
 }
-
-/* Apply to all resolutions */
-
-/* Remove glitchy category border */
-.single .site-content>.post .entry-meta {border-bottom: 0px;}
-
-/* Author avatar */
-.author-name {position:relative;} 
-
-/* Page navigation */
-.page-links {font-size: 22px;}
-
-.desktop .wrap-navigation {width: 100%;}
-
-.single .site-content>.post .post-categories li {background: #FF0000;} 
-
 /* End custom CSS */
