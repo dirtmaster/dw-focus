@@ -1,21 +1,12 @@
 DW Focus
 ==============
 
-This is a fork of the Wordpress theme "DW Focus", as used on The Powerbase (www.thepowerbase.com).
-
-You can purchase a license for DW Focus from the original developers at:
-
-http://www.designwall.com/wordpress-theme/dw-focus/
+Simplified version of the DW Focus theme used on thepowerbase.com     
 
 Modifications
 ==============
 
-Current theme modifications include:
-
-* Widen site layout on desktop browsers
-* Add author name and picture to each post
-* Enlarge header logo area
-* General UI tweaks and modifications
+* Removed lame stuff
 
 License
 ==============
