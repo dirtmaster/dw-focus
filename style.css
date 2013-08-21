@@ -60,7 +60,7 @@ background-image: none;
 }
 
 /* Slide over search bar */
-#under-navigation .searchForm {margin: 0 0 0 -91px;}
+#under-navigation .searchForm {margin: 0 0 0 -71px;}
 }
 
 /* Apply to all resolutions */
@@ -73,5 +73,9 @@ background-image: none;
 
 /* Page navigation */
 .page-links {font-size: 22px;}
+
+.desktop .wrap-navigation {width: 100%;}
+
+.single .site-content>.post .post-categories li {background: #FF0000;} 
 
 /* End custom CSS */

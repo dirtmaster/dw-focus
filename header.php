@@ -41,22 +41,6 @@
 		            <?php } ?>
 		        </div>
 	        </div>
-	        <?php 
-	        	if( !is_handheld() ) :
-			        $max_number_posts = dw_get_option('dw_menu_number_posts');
-			        if( ! $max_number_posts ) {
-			            $max_number_posts = 15;
-			        }
-			        if( $max_number_posts > 0 ) {
-	        ?>
-		            <div class="btn-group top-news">
-				    	<?php dw_top15(); ?>
-				    </div>
-			<?php  
-					} 
-				endif; 
-			?>
-
 		    <div class="wrap-navigation">
 		        <nav id="site-navigation" class="main-navigation navbar" role="navigation">
 		            <div class="navbar-inner">

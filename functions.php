@@ -416,9 +416,6 @@ if( ! function_exists('dw_focus_post_actions') ) :
 
     ?>		
 		<div class="entry-action">
-		<!-- Show author name/avatar -->
-		<span class="author-name"><?php echo get_avatar(get_the_author_email(), '24'); ?>  <?php the_author(); ?></span>
-		<br>
 		<!-- Show date -->
 		<?php
 			$metadata = wp_get_attachment_metadata();
@@ -444,8 +441,6 @@ if( ! function_exists('dw_focus_post_actions') ) :
 				<ul>
 					<li id="twitter-share" class="twitter" data-post-id="<?php echo $post_id ?>" data-nonce="<?php echo wp_create_nonce( '_dw_focus_single_tweet_count_nonce' ); ?>"><i class="icon-twitter"></i><a href="https://twitter.com/intent/tweet?url=<?php echo $url; ?>&amp;text=<?php echo $title; ?>"><?php _e('Twitter','dw_focus') ?></a><span class="digit digit-twitter"><?php echo $twitter_count; ?></span></li>
 					<li class="facebook"><i class="icon-facebook-sign"></i><a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo $url; ?>&amp;t=<?php echo $title; ?>" ><?php _e('Facebook','dw_focus') ?></a><span class="digit digit-facebook"><?php echo $facebook_count ?></span></li>
-					<li class="google"><i class="icon-google-plus-sign"></i><a href="https://plus.google.com/share?url=<?php echo $url; ?>" ><?php _e('Google +','dw_focus') ?></a><span>0</span></li>
-					<li class="linkedin"><i class="icon-linkedin-sign"></i><a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=<?php echo $url ?>&amp;title=<?php echo $title ?>&amp;summary=<?php echo rawurlencode( get_the_excerpt() ); ?>"><?php _e('Linkedin','dw_focus') ?></a><span class="digit digit-linkedin"><?php echo $linkedin_count ?></span></li>
 					<li class="email"><i class="icon-envelope-alt"></i><a href="mailto:?Subject=<?php echo $title; ?>&amp;body=<?php echo $url; ?>"><?php _e('Email this article', 'dw_focus' ); ?></a></li>
                     <?php if( ! is_handheld() ) { ?>
 					<li class="print"><i class="icon-print"></i><a href="#" onclick="window.print();"><?php _e('Print this article','dw_focus'); ?></a></li>

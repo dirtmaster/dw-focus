@@ -74,14 +74,7 @@ class dw_focus_top_posts extends WP_Widget {
 
                                 <?php if( has_post_thumbnail(get_the_ID()) ){  ?>
                                 <div class="entry-thumbnail">
-                                    <?php 
-                                        $category = get_the_category(); 
-                                        if($category[0]){
-                                        echo '<a class="entry-category" href="'.get_category_link($category[0]->term_id ).'">'.$category[0]->cat_name.'</a>';
-                                        }
-                                    ?>
-
-                                    <?php the_post_thumbnail('slider-thumb');  ?>
+                                <?php the_post_thumbnail('slider-thumb');  ?>
                                 </div>
                                 <?php } ?>
 
