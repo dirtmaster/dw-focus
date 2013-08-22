@@ -48,7 +48,6 @@
                             <?php printf( __( '<span> on </span>%1$s', 'dw_focus' ), $categories_list ); ?>
                         </span>
                         <?php endif; ?>
-                        <span class="author">by <?php the_author_posts_link(); ?> </span>
                     </div>
                 </header>
             <?php endif; ?>
@@ -71,7 +70,6 @@
                     </span>
                     <?php endif; // End if categories ?>
 
-                    <span class="author">by <?php the_author_posts_link(); ?> </span>
                 </div>
             </header>
 
