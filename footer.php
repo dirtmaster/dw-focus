@@ -74,9 +74,8 @@
         <div id="site-info" class="container">
             <div class="clearfix">
                 <div class="copyright">
-			<p>Original theme by <a href="http://designwall.com" title="Design Wall">Design Wall</a>, modified for The Powerbase.
-			<a title="DW Focus on GitHub" href="https://github.com/MS3FGX/dw-focus">Fork this theme on GitHub.</a></p>
-			<p>Proudly powered by <a href="http://wordpress.org/" title="Semantic Personal Publishing Platform">WordPress</a></p>
+			<p><a title="DW Focus on GitHub" href="https://github.com/dirtmaster/dw-focus">Fork this theme on GitHub.</a></p>
+			<p>Powered by <a href="http://wordpress.org/" title="Semantic Personal Publishing Platform">WordPress</a></p>
                 </div>
             </div>
         </div>

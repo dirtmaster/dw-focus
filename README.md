@@ -1,12 +1,16 @@
 DW Focus
 ==============
 
-Simplified version of the DW Focus theme used on thepowerbase.com     
+Simplified version of the DW Focus theme used on thepowerbase.com, for use
+on a website with largely static content.
 
 Modifications
 ==============
 
-* Removed lame stuff
+* New dark color scheme
+* Remove per-article author references
+* Remove article ages from menus
+* Removed unused code/functions
 
 License
 ==============
