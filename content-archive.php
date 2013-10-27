@@ -37,15 +37,16 @@
                     <h2 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( __( 'Permalink to %s', 'dw_focus' ), the_title_attribute( 'echo=0' ) ) ); ?>" rel="bookmark"><?php the_title(); ?></a>
                     </h2>
 
-                    <div class="entry-meta entry-meta-top">
-                        <?php echo get_the_date('c'); ?>
+                    <div class="entry-meta entry-meta-top">                     
+                        <?php printf( __( 'Posted: ')); ?>
+			<?php echo get_the_date('c'); ?>
 
                         <?php
                             $categories_list = get_the_category_list( __( ', ', 'dw_focus' ) );
                             if ( $categories_list && dw_focus_categorized_blog() ) :
                         ?>
                         <span class="cat-links">
-                            <?php printf( __( '<span> on </span>%1$s', 'dw_focus' ), $categories_list ); ?>
+                            <?php printf( __( '<span> in </span>%1$s', 'dw_focus' ), $categories_list ); ?>
                         </span>
                         <?php endif; ?>
                     </div>
@@ -58,6 +59,7 @@
                 <h2 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( __( 'Permalink to %s', 'dw_focus' ), the_title_attribute( 'echo=0' ) ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
 
                 <div class="entry-meta entry-meta-top">
+                    <?php printf( __( 'Posted: ')); ?>
                     <?php echo get_the_date('c'); ?>
 
                     <?php
@@ -66,7 +68,7 @@
                         if ( $categories_list && dw_focus_categorized_blog() ) :
                     ?>
                     <span class="cat-links">
-                        <?php printf( __( '<span> on </span>%1$s', 'dw_focus' ), $categories_list ); ?>
+                        <?php printf( __( '<span> in </span>%1$s', 'dw_focus' ), $categories_list ); ?>
                     </span>
                     <?php endif; // End if categories ?>
 

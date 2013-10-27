@@ -103,5 +103,8 @@ background-image: none;
 
 /* Slide over search bar */
 #under-navigation .searchForm {margin: 0 0 0 -71px;}
+
+/* Fix article grid view */
+.archive .content-inner.layout-grid .type-post {height: 410px;}
 }
 /* End custom CSS */
