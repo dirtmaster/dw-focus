@@ -29,6 +29,12 @@ body, input.field, .navbar .nav .menu-item-object-category .sub-mega-wrap,.archi
 /* Underline in-content links */
 .entry-content a {text-decoration: underline!important;}
 
+/* White links, red hovers for carousel */
+.news-slider .carousel .carousel-inner .entry-title a {color: white;}
+.news-slider .carousel .carousel-inner .entry-title a:hover {color: #ee3224;}
+.news-slider .carousel-list .other-entry a {color: white;}
+.news-slider .carousel-list .other-entry .active a {color: #ee3224;}
+
 .archive .content-inner.layout-grid {background: none;}
 
 .content-bar {background-color: #1C1A1A;}
