@@ -12,11 +12,16 @@ License URI: COPYING
 /* Apply to all resolutions */
 
 /* Color scheme changes */
-body, input.field, .navbar .nav .menu-item-object-category .sub-mega-wrap,.archive .content-inner.layout-grid .type-post:first-child {background-color: black; color:#BEBEBE;}
+body, input.field, .navbar .nav .menu-item-object-category .sub-mega-wrap,.archive .content-inner.layout-grid .type-post:first-child, #secondary .widget .widget-title {background-color: black; color:#BEBEBE;}
 
-.single .entry-title, .page .entry-title, a, .archive .content-inner .entry-meta a, .single .site-content>.post .entry-action a {color: white;}
+/* Clickable elements white */
+.single .entry-title, .page .entry-title, a, .archive .content-inner .entry-meta a, .single .site-content>.post .entry-action a, .navbar .nav li a, .navbar .nav .menu-parent-item>a:after {color:white;}
 
+/* Navigation color */
 .navbar .nav .menu-item-object-category .sub-mega-wrap .current_page_item>a, .navbar .nav .menu-item-object-category .sub-mega-wrap .current-menu-item>a, .navbar .nav .menu-item-object-category .sub-mega-wrap .current-post-ancestor>a, .navbar .nav .menu-item-object-category .sub-mega-wrap .current-menu-parent>a, .navbar .nav .menu-item-object-category .sub-mega-wrap .current-menu-ancestor>a {color: #EE3224;}
+
+/* Tweak size of titles in navigation menus */
+.navbar .nav .menu-item-object-category .sub-mega-wrap .subcat a {font-size: 20px; line-height: 40px;}
 
 /* Match left sidebar hovers to rest of layout */
 .single .site-content>.post .entry-action .social-action .email a:hover,.single .site-content>.post .entry-action .social-action .print a:hover,.single .site-content>.post .entry-action .tag-action a:hover,.single .site-content>.post .entry-action .social-action .twitter a:hover,.single .site-content>.post .entry-action .social-action .facebook a:hover {color:#ee3224}
@@ -32,8 +37,6 @@ p {background-color: black;}
 .navbar {border: none;}
 
 .navbar .navbar-inner {border-width: 2px 0px 1px 0px; border-color: #D4D4D4;}
-
-.navbar .nav li a, .navbar .nav .menu-parent-item>a:after, #secondary .widget .widget-title {color:#666;}
 
 h1, h2, h3, h4, h5, h6 {color: #6A6E7F;}
 
