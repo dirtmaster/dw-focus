@@ -18,7 +18,8 @@ body, input.field, .navbar .nav .menu-item-object-category .sub-mega-wrap,.archi
 
 .navbar .nav .menu-item-object-category .sub-mega-wrap .current_page_item>a, .navbar .nav .menu-item-object-category .sub-mega-wrap .current-menu-item>a, .navbar .nav .menu-item-object-category .sub-mega-wrap .current-post-ancestor>a, .navbar .nav .menu-item-object-category .sub-mega-wrap .current-menu-parent>a, .navbar .nav .menu-item-object-category .sub-mega-wrap .current-menu-ancestor>a {color: #EE3224;}
 
-.single .site-content>.post .entry-action .tag-action a:hover{color:#ee3224}.
+/* Match left sidebar hovers to rest of layout */
+.single .site-content>.post .entry-action .social-action .email a:hover,.single .site-content>.post .entry-action .social-action .print a:hover,.single .site-content>.post .entry-action .tag-action a:hover,.single .site-content>.post .entry-action .social-action .twitter a:hover,.single .site-content>.post .entry-action .social-action .facebook a:hover {color:#ee3224}
 
 .archive .content-inner.layout-grid {background: none;}
 
