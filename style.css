@@ -35,6 +35,9 @@ body, input.field, .navbar .nav .menu-item-object-category .sub-mega-wrap,.archi
 .news-slider .carousel-list .other-entry a {color: white;}
 .news-slider .carousel-list .other-entry .active a {color: #ee3224;}
 
+/* Hide timestamp in "Latest Titles" crawl. */
+#under-navigation .dw_focus_headlines .headlines li {color: black;}
+
 .archive .content-inner.layout-grid {background: none;}
 
 .content-bar {background-color: #1C1A1A;}
