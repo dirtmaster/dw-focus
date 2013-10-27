@@ -26,6 +26,9 @@ body, input.field, .navbar .nav .menu-item-object-category .sub-mega-wrap,.archi
 /* Match left sidebar hovers to rest of layout */
 .single .site-content>.post .entry-action .social-action .email a:hover,.single .site-content>.post .entry-action .social-action .print a:hover,.single .site-content>.post .entry-action .tag-action a:hover,.single .site-content>.post .entry-action .social-action .twitter a:hover,.single .site-content>.post .entry-action .social-action .facebook a:hover {color:#ee3224;}
 
+/* Underline in-content links */
+.entry-content a {text-decoration: underline!important;}
+
 .archive .content-inner.layout-grid {background: none;}
 
 .content-bar {background-color: #1C1A1A;}
