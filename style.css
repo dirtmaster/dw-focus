@@ -24,7 +24,7 @@ body, input.field, .navbar .nav .menu-item-object-category .sub-mega-wrap,.archi
 .navbar .nav .menu-item-object-category .sub-mega-wrap .subcat a {font-size: 20px; line-height: 40px;}
 
 /* Match left sidebar hovers to rest of layout */
-.single .site-content>.post .entry-action .social-action .email a:hover,.single .site-content>.post .entry-action .social-action .print a:hover,.single .site-content>.post .entry-action .tag-action a:hover,.single .site-content>.post .entry-action .social-action .twitter a:hover,.single .site-content>.post .entry-action .social-action .facebook a:hover {color:#ee3224}
+.single .site-content>.post .entry-action .social-action .email a:hover,.single .site-content>.post .entry-action .social-action .print a:hover,.single .site-content>.post .entry-action .tag-action a:hover,.single .site-content>.post .entry-action .social-action .twitter a:hover,.single .site-content>.post .entry-action .social-action .facebook a:hover {color:#ee3224;}
 
 .archive .content-inner.layout-grid {background: none;}
 
@@ -38,7 +38,9 @@ p {background-color: black;}
 
 .navbar .navbar-inner {border-width: 2px 0px 1px 0px; border-color: #D4D4D4;}
 
-h1, h2, h3, h4, h5, h6 {color: #6A6E7F;}
+/* Heading colors */
+h1, h2, h4, h5, h6 {color: #6A6E7F;}
+h3 {color:#ee3224;}
 
 /* Remove glitchy category border */
 .single .site-content>.post .entry-meta {border-bottom: 0px;}
