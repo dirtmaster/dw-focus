@@ -4,7 +4,7 @@ Theme URI: http://www.designwall.com/wordpress-theme/dw-focus
 Author: dirtmaster
 Author URI: http://www.designwall.com
 Description: Fork of Design Wall's "DW Focus" Wordpress theme by the dirtmaster.
-Version: 1.4
+Version: 1.5
 License: GNU General Public License v2
 License URI: COPYING
 */
@@ -37,6 +37,9 @@ body, input.field, .navbar .nav .menu-item-object-category .sub-mega-wrap,.archi
 
 /* Hide timestamp in "Latest Titles" crawl. */
 #under-navigation .dw_focus_headlines .headlines li {color: black;}
+
+/* Blockquote colors */
+blockquote, blockquote strong {color: #BEBEBE;}
 
 .archive .content-inner.layout-grid {background: none;}
 
