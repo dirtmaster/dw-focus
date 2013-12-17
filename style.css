@@ -20,9 +20,6 @@ body, input.field, .navbar .nav .menu-item-object-category .sub-mega-wrap,.archi
 /* Navigation color */
 .navbar .nav .menu-item-object-category .sub-mega-wrap .current_page_item>a, .navbar .nav .menu-item-object-category .sub-mega-wrap .current-menu-item>a, .navbar .nav .menu-item-object-category .sub-mega-wrap .current-post-ancestor>a, .navbar .nav .menu-item-object-category .sub-mega-wrap .current-menu-parent>a, .navbar .nav .menu-item-object-category .sub-mega-wrap .current-menu-ancestor>a {color: #EE3224;}
 
-/* Tweak size of titles in navigation menus */
-.navbar .nav .menu-item-object-category .sub-mega-wrap .subcat a {font-size: 20px; line-height: 40px;}
-
 /* Match left sidebar hovers to rest of layout */
 .single .site-content>.post .entry-action .social-action .email a:hover,.single .site-content>.post .entry-action .social-action .print a:hover,.single .site-content>.post .entry-action .tag-action a:hover,.single .site-content>.post .entry-action .social-action .twitter a:hover,.single .site-content>.post .entry-action .social-action .facebook a:hover {color:#ee3224;}
 
@@ -84,6 +81,13 @@ h3 {color:#ee3224;}
 #secondary .entry-thumbnail img {width: 300px;}
 
 .single .site-content > .post .entry-content {max-width: 630px;}
+
+/* Enlage navigation drop downs */
+.navbar .nav .menu-item-object-category .sub-mega-wrap {width:670px;}
+.navbar .nav .menu-item-object-category .sub-mega-wrap .subcat {width:520px;}
+
+/* Tweak size of titles in navigation menus */
+.navbar .nav .menu-item-object-category .sub-mega-wrap .subcat a {font-size: 20px; line-height: 40px;}
 
 /* Enlarge slider sidebar */
 .news-slider .carousel-list {width: 280px;}
