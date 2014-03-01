@@ -1,9 +1,6 @@
 <?php
 /*
  * The template for displaying content on the archive page.
- *
- * @package DW Focus
- * @since DW Focus 1.0.2
  */
 ?>
 
@@ -37,19 +34,23 @@
                     <h2 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( __( 'Permalink to %s', 'dw_focus' ), the_title_attribute( 'echo=0' ) ) ); ?>" rel="bookmark"><?php the_title(); ?></a>
                     </h2>
 
-                    <div class="entry-meta entry-meta-top">                     
+                    <div class="entry-meta entry-meta-top">
+                        <!-- DM: Same changes to both sections -->
+                        <!-- DM: Add "Posted" -->
                         <?php printf( __( 'Posted: ')); ?>
-			<?php echo get_the_date('c'); ?>
+                        <?php echo dw_human_time(); ?>
 
                         <?php
                             $categories_list = get_the_category_list( __( ', ', 'dw_focus' ) );
                             if ( $categories_list && dw_focus_categorized_blog() ) :
                         ?>
                         <span class="cat-links">
+                            <!-- DM: Change on to in-->
                             <?php printf( __( '<span> in </span>%1$s', 'dw_focus' ), $categories_list ); ?>
                         </span>
                         <?php endif; ?>
-                    </div>
+                     <!-- DM: Remove author-->                    
+                     </div>
                 </header>
             <?php endif; ?>
         </div>
@@ -59,8 +60,8 @@
                 <h2 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( __( 'Permalink to %s', 'dw_focus' ), the_title_attribute( 'echo=0' ) ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
 
                 <div class="entry-meta entry-meta-top">
-                    <?php printf( __( 'Posted: ')); ?>
-                    <?php echo get_the_date('c'); ?>
+                    <?php printf( __( 'Posted: ')); ?>                    
+                    <?php echo dw_human_time(); ?>
 
                     <?php
                         /* translators: used between list items, there is a space after the comma */
@@ -71,7 +72,6 @@
                         <?php printf( __( '<span> in </span>%1$s', 'dw_focus' ), $categories_list ); ?>
                     </span>
                     <?php endif; // End if categories ?>
-
                 </div>
             </header>
 

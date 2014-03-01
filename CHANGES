@@ -1,0 +1,5 @@
+Dirtmaster Mod (DM) Changes:
+Remove author info in article view (functions.php)
+Remove author info in archive view (content-archive.php)
+Remove published timestamp from nav (inc/mega-menu.php)
+Remove category tag on slider featured art (inc/widgets/dw-focus-slider.php)

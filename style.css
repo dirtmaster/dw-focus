@@ -4,12 +4,15 @@ Theme URI: http://www.designwall.com/wordpress-theme/dw-focus
 Author: dirtmaster
 Author URI: http://www.designwall.com
 Description: Fork of Design Wall's "DW Focus" Wordpress theme by the dirtmaster.
-Version: 1.5
+Version: 1.6
 License: GNU General Public License v2
 License URI: COPYING
 */
 
 /* Apply to all resolutions */
+
+/* Turn off social links */
+.social-links .rss, .social-links .login {display: none;}
 
 /* Color scheme changes */
 body, input.field, .navbar .nav .menu-item-object-category .sub-mega-wrap,.archive .content-inner.layout-grid .type-post:first-child, #secondary .widget .widget-title {background-color: black; color:#BEBEBE;}
@@ -83,8 +86,8 @@ h3 {color:#ee3224;}
 .single .site-content > .post .entry-content {max-width: 630px;}
 
 /* Enlage navigation drop downs */
-.navbar .nav .menu-item-object-category .sub-mega-wrap {width:670px;}
-.navbar .nav .menu-item-object-category .sub-mega-wrap .subcat {width:520px;}
+.navbar .nav .menu-item-object-category .sub-mega-wrap {width:690px;}
+.navbar .nav .menu-item-object-category .sub-mega-wrap .subcat {width:540px;}
 
 /* Tweak size of titles in navigation menus */
 .navbar .nav .menu-item-object-category .sub-mega-wrap .subcat a {font-size: 20px; line-height: 40px;}
@@ -102,7 +105,7 @@ width: 390px;
 height: 100px;
 }
 
-/* Enables 3 banners at 230 x 100 each */
+/* Enables 3 banners at ~200 x 100 each */
 /* Enlarge banner area */
 .span7
 {
@@ -111,7 +114,12 @@ margin-left: 46px;
 }
 
 /* Shrink widget margins */
-#header .widget {margin-left: 16px;}
+#header .widget
+{
+margin-left: 16px;
+float: left;
+width: 217px;
+}
 
 #branding {width: 390px;}
 

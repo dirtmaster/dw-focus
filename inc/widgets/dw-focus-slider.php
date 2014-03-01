@@ -1,9 +1,6 @@
 <?php  
 /**
  * dw_focus_top_posts widget class
- *
- * @package DW Focus
- * @since 1.0.2
  */
 class dw_focus_top_posts extends WP_Widget {
 
@@ -74,7 +71,8 @@ class dw_focus_top_posts extends WP_Widget {
 
                                 <?php if( has_post_thumbnail(get_the_ID()) ){  ?>
                                 <div class="entry-thumbnail">
-                                <?php the_post_thumbnail('slider-thumb');  ?>
+                                    <!-- DM: Remove category tag on feat art -->
+                                    <?php the_post_thumbnail('slider-thumb');  ?>
                                 </div>
                                 <?php } ?>
 
@@ -84,7 +82,28 @@ class dw_focus_top_posts extends WP_Widget {
                                         <div class="entry-meta">
                                         <?php 
                                             if( isset( $instance['date'] ) && $instance['date'] ) { 
-                                                echo get_the_date('c');
+                                                echo dw_human_time();
+                                            }
+                                        ?>
+
+                                        <?php 
+                                            if( isset( $instance['author'] ) && $instance['author'] ) {
+                                                ?>
+                                                by <a href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>" rel="author"><?php echo get_the_author(); ?></a>
+                                                <?php
+                                            }
+                                        ?>
+
+                                        <?php 
+                                            if( isset( $instance['cat'] ) && $instance['cat'] ) {
+                                                $categories_list = get_the_category_list( __( ', ', 'dw_focus' ) );
+                                                    if ( $categories_list && dw_focus_categorized_blog() ) :
+                                                ?>
+                                                <span class="cat-links">
+                                                    <?php printf( __( '<span> on </span>%1$s', 'dw_focus' ), $categories_list ); ?>
+                                                </span>
+                                                <?php
+                                                endif;
                                             }
                                         ?>
                                         </div>
@@ -117,7 +136,7 @@ class dw_focus_top_posts extends WP_Widget {
                                 if( $i == 0 ){ $active = 'active'; }
                         ?>
                         <li class="<?php echo $active; ?>">
-                            <h2><a data-slice="<?php echo $i; ?>" href="#top-store-<?php the_ID(); ?>"><?php the_title(); ?></a></h2>
+                            <h2><a data-slice="<?php echo $i; ?>" href="<?php echo the_permalink(); ?>"><?php the_title(); ?></a></h2>
                         </li>
                         <?php $i++; } ?>
                     </ul>
